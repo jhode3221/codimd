@@ -1,0 +1,39 @@
+flowchart TD
+    A[Inicio]
+    B[Preparar el sistema experimental]
+    C[Verificar que el calor de solución del KCl (QP) es conocido]
+    D[Calcular K´ = K + (m1 + m2)*C]
+    E[Calcular QP: QP = [(m1 + m2)*C + K]·ΔT · (M/m2)]
+    F[Configurar el calorímetro adiabático]
+    G[Poner 150 cc de agua destilada en el vaso Dewar]
+    H[Pesar 2 g de KCl anhídrido finamente pulverizado]
+    I[Transferir KCl a la ampolla]
+    J[Colocar la ampolla, termómetro (calibrado) y agitador en el tapón del Dewar]
+    K[Encender el agitador y empezar el registro de temperatura (cada 10 s)]
+    L[Reacción de solución del KCl (efecto endotérmico)]
+    M[Registrar la disminución de temperatura (ΔT) durante la solución]
+    N[Realizar lecturas en el período final hasta estabilización]
+    O[Obtener valor final de ΔT corregida]
+    P[Determinar la capacidad calorífica global: K´ = (QP · n₂)/ΔT]
+    Q[Aplicar balance térmico: (m1 + m2)*C + K = K´]
+    R[Análisis y cálculo final]
+    S[Fin del proceso experimental]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    B --> F
+    F --> G
+    F --> H
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+    M --> N
+    N --> O
+    O --> P
+    P --> Q
+    Q --> R
+    R --> S
